@@ -1,0 +1,51 @@
+#Author: Jing Wang, for Program Design
+# try_project2_arithmetic is a Unix shell script that will be used to test project 2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project2_arithmetic
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_project2_arithmetic
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+4 + 5
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input:4 + 5'
+echo 'Output: 9' 
+echo '===================================================='
+./a.out <<-EndOfInput
+ 4 - 2
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input: 4 - 2'
+echo 'Ouput: 2 '
+echo '===================================================='
+./a.out <<-EndOfInput
+   6 *   2
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input:     6 *   2'
+echo 'Output: 12'
+echo '===================================================='
+./a.out <<-EndOfInput
+  8  + 7 
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input:   8   + 7'
+echo 'Output: 15'
+echo '===================================================='
+./a.out <<-EndOfInput
+  8  h 7 
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter input:   8   h 7'
+echo 'Output: unrecognized operator'
+echo '===================================================='
