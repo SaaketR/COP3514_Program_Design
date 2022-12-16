@@ -1,0 +1,31 @@
+#test script for project 6
+#Author: Jing Wang, for Program Design
+#To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project8_paragraph
+# Compile your program, producing a.out as the executable
+# To run the script, type
+# ./try_project8_paragraph
+# The user input will not be shown on the screen
+./a.out <<-EndOfInput
+message1.txt
+EndOfInput
+#
+cat new_message1.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: message1.txt'
+echo 'Output file name: new_message1.txt'
+echo 'I heard radio station announced they will give away free circus tickets to the first twenty five people who call in. It sounds like fun. Lets all call and go together.'
+echo '===================================================='
+./a.out <<-EndOfInput
+message2.txt
+EndOfInput
+#
+cat new_message2.txt
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter file name: message2.txt'
+echo 'Output file name: new_message2.txt'
+echo 'I have eaten the plums that were in the icebox  and which you were probably saving for breakfast  Forgive me they were delicious so sweet and so cold' 
+echo '===================================================='
