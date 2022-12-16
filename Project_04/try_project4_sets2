@@ -1,0 +1,56 @@
+# Written by Jing Wang for Program Design
+# This is a Unix shell script that will be used to test project 3.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project3_set_difference
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_project3_set_difference
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+6
+6 2 8 3 7 4 
+4
+8 3 9 1
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of elemenet in set A: 6'
+echo 'Enter the set elements: 6 2 8 3 7 4'
+echo 'Enter the number of elemenet in set B: 4'
+echo 'Enter the set elements: 8 3 9 1'
+echo 'Output: Set A and set B are not mutually disjoint.'
+echo 'Output: Symmetric difference of set A and set B: 1 2 4 6 7 9'
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+6 2 8 3 
+6
+1 4 9 5 7 0 
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of elemenet in set A: 4'
+echo 'Enter the set elements: 6 2 8 3'
+echo 'Enter the number of elemenet in set B: 6'
+echo 'Enter the set elements: 1 4 9 5 7 0'
+echo 'Output: Set A and set B are mutually disjoint.'
+echo 'Output: Symmetric difference of set A and set B:0 1 2 3 4 5 6 7 8 9'
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+8 3 7 4 
+6
+8 3 9 1 7 4
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the number of elemenet in set A: 4'
+echo 'Enter the set elements: 8 3 7 4'
+echo 'Enter the number of elemenet in set B: 6'
+echo 'Enter the set elements: 8 3 9 1 7 4'
+echo 'Output: Set A and set B are not mutually disjoint.'
+echo 'Output: Symmetric difference of set A and set B:1 9'
+echo '===================================================='
