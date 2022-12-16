@@ -1,0 +1,51 @@
+# Written by Jing Wang for Program Design
+# This is a Unix shell script that will be used to test project 4.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_parity
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_project4_parity
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+8
+6 2 17 3 9 17 2 8
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 8'
+echo 'Enter the array elements: 6 2 17 3 9 17 2 8'
+echo 'Output: parities of elements do not match parities of indices.'
+echo '===================================================='
+./a.out <<-EndOfInput
+5
+3 8 9 6 17
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 5'
+echo 'Enter the array elements: 3 8 9 6 17'
+echo 'Output: parities of elements do not match parities of indices.'
+echo '===================================================='
+./a.out <<-EndOfInput
+3
+2 11 56
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 3'
+echo 'Enter the array elements: 2 11 56'
+echo 'Output: parities of elements match parities of indices.'
+echo '===================================================='
+./a.out <<-EndOfInput
+4
+19 10 13 9
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter the length of the input array: 4'
+echo 'Enter the array elements: 19 10 13 9'
+echo 'Output: parities of elements do not match parities of indices.'
+echo '===================================================='
