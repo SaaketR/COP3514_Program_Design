@@ -1,0 +1,51 @@
+#Author: Jing Wang, for Program Design
+# try_metal is a Unix shell script that will be used to test project 5.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_metal
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_metal
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out <<-EndOfInput
+psg
+abc
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter first string: Psg'
+echo 'Enter second string: aBc'
+echo 'Output: 1'
+echo '===================================================='
+./a.out <<-EndOfInput
+age
+APP
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter first string: age'
+echo 'Enter second string: APP'
+echo 'Output: -1'
+echo '===================================================='
+./a.out <<-EndOfInput
+psGr
+PSgR
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter first string: psGr'
+echo 'Enter second string: PSgR'
+echo 'Output: 0'
+echo '===================================================='
+./a.out <<-EndOfInput
+PSG
+psb
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Enter first string: PSG'
+echo 'Enter second string: psb'
+echo 'Output: 1'
+echo '===================================================='

@@ -1,0 +1,35 @@
+#Author: Jing Wang, for Program Design
+# try_project2_arithmetic is a Unix shell script that will be used to test project 2.
+# To use the script, copy it into the same directory as your scource file
+# Set execute permission for the file by issuing the command:
+# chmod +x try_project5_arithmetic
+# Compile your program, producing a.out as the executable
+# To run the script, type 
+# ./try_project5_arithmetic
+# The user input from the script will not be shown on the screen.
+# Compare the results from your program with the expected results on the test cases.
+echo '===================================================='
+./a.out 4 + 5 <<-EndOfInput
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Output: 9' 
+echo '===================================================='
+./a.out 4   - 2 <<-EndOfInput
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Ouput: 2 '
+echo '===================================================='
+./a.out 6 - 2  <<-EndOfInput
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Output: 4'
+echo '===================================================='
+./a.out 8 / 7 <<-EndOfInput
+EndOfInput
+echo '----------------------------------------------------'
+echo 'Expected:'
+echo 'Output: unrecoganized operator'
+echo '===================================================='
